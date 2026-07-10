@@ -54,7 +54,6 @@ h2 {
     padding: 0.5rem 0.75rem;
     background-color: #ace;
     color: #000;
-    grid-area: menu;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -67,7 +66,7 @@ h2 {
 
 nav {
     background-color: #ace;
-    grid-area: itens;
+    display: flex;
 }
 
 .navigation {
