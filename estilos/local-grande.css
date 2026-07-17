@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+    .hero-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        height: 550px;
+        width: 100%;
+    }
+
+    .card {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.65);
+        border: none;
+        box-shadow: var(--card-shadow);
+        border-radius: 4px;
+        width: 320px;
+        padding: 0 0 20px 0;
+        overflow: hidden;
+    }
+
+    .data-card {
+        top: 40px;
+        left: 40px;
+    }
+
+    .weather-card {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .card-title-box {
+        background-color: var(--primary-blue);
+        padding: 12px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 60px;
+    }
+
+    .card-title-box h2 {
+        color: var(--white);
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 1.5rem;
+        padding-left: 15px;
+    }
+
+    .info-table {
+        max-width: 100%;
+    }
+
+    .info-table td {
+        font-size: 0.85rem;
+        padding: 4px 10px;
+    }
+
+    .info-table td.label {
+        width: 45%;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-title::after {
+        content: " ⛅";
+        font-size: 1.4rem;
+        vertical-align: middle;
+    }
+}

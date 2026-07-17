@@ -1,0 +1,113 @@
+:root {
+    --primary-red: #BA0C2F; 
+    --primary-blue: #00205B;  
+    --white: #FFFFFF;
+    --dark-text: #222222;
+    --light-bg: #F0F4F8; 
+    --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--primary-red);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--white);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.divider {
+    background-color: var(--primary-blue);
+    height: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+main {
+    width: 100%;
+    background-color: var(--white);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-title-box h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.weather-icon-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.info-table td {
+    padding: 6px 12px;
+    font-size: 0.95rem;
+}
+
+.info-table td.label {
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+}
+
+footer {
+    background-color: var(--primary-red);
+    color: var(--white);
+    width: 100%;
+    padding: 25px 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.last-modified {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
