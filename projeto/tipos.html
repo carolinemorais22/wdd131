@@ -1,0 +1,87 @@
+<!------------------------------------------
+   Projeto: Elas Seguras
+   Curso: WDD 131 - Fundamentos da Web Dinâmica
+   Autor: Caroline Marques Morais Cardoso
+------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os 6 tipos de violência previstos na Lei Maria da Penha: física, psicológica, moral, patrimonial e sexual.">
+    <meta name="author" content="Caroline Marques Morais Cardoso">
+    <title>🌼 Elas Seguras</title>
+    <link rel="stylesheet" href="estilo/projeto.css">
+    <script src="scripts/projeto-final.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <span class="logo-icon">🌼</span>
+                <span class="logo-text">Elas Seguras</span>
+            </div>
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="tipos.html" class="active">Tipos de Violência</a></li>
+                    <li><a href="denuncia.html">Denúncia e Canais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-title-banner">
+            <h1>Tipos de Violência Contra a Mulher</h1>
+            <p>Conheça os 6 tipos previstos na Lei Maria da Penha (Lei nº 11.340/2006)</p>
+        </section>
+
+        <section class="section-container">
+            <div class="search-box">
+                <label for="searchInput"><strong>Buscar por tipo de violência ou palavra-chave:</strong></label>
+                <input type="text" id="searchInput" placeholder="Ex: ciúmes, controle, bens, ameaça...">
+            </div>
+
+            <div id="typesGrid" class="types-grid">
+            </div>
+        </section>
+
+        <section class="section-container bg-light">
+            <h2>O Ciclo da Violência</h2>
+            <p>A violência doméstica costuma ocorrer em um ciclo contínuo composto por três fases principais:</p>
+            <div class="cycle-container">
+                <div class="cycle-card">
+                    <span class="cycle-number">1</span>
+                    <h3>Aumento da Tensão</h3>
+                    <p>O agressor mostra-se irritado, faz ameaças, destrói objetos e tem crises de ciúmes desmotivadas.</p>
+                </div>
+                <div class="cycle-card">
+                    <span class="cycle-number">2</span>
+                    <h3>Ato de Violência</h3>
+                    <p>Corresponde à explosão do agressor, ocorrendo as agressões graves (físicas, verbais, psicológicas ou sexuais).</p>
+                </div>
+                <div class="cycle-card">
+                    <span class="cycle-number">3</span>
+                    <h3>Lua de Mel (Arrependimento)</h3>
+                    <p>O agressor demonstra remorso, pede perdão, promete mudar e torna-se carinhoso até que a tensão recomece.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>Elas Seguras &copy; <span id="anoAtual"></span> - Brasil</p>
+            <p>Última modificação: <span id="ultimaModificacao"></span></p>
+            <p class="footer-links"><a href="referencias.html">Página de Referências e Fontes</a></p>
+        </div>
+    </footer>
+</body>
+</html>
